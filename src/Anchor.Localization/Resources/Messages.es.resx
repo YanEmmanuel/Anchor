@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Action.Accept" xml:space="preserve"><value>Aceptar</value></data>
+  <data name="Action.Cancel" xml:space="preserve"><value>Cancelar</value></data>
+  <data name="Action.Commit" xml:space="preserve"><value>Hacer commit</value></data>
+  <data name="Action.Copy" xml:space="preserve"><value>Copiar</value></data>
+  <data name="Action.EditBody" xml:space="preserve"><value>Editar cuerpo</value></data>
+  <data name="Action.EditTitle" xml:space="preserve"><value>Editar titulo</value></data>
+  <data name="Action.Regenerate" xml:space="preserve"><value>Regenerar</value></data>
+  <data name="BranchAi.Title" xml:space="preserve"><value>Sugerencia de branch</value></data>
+  <data name="Banner.Tagline" xml:space="preserve"><value>asistente Git</value></data>
+  <data name="CommitAi.Committed" xml:space="preserve"><value>Commit creado correctamente.</value></data>
+  <data name="CommitAi.CommitPrompt" xml:space="preserve"><value>Crear el commit Git con este mensaje?</value></data>
+  <data name="CommitAi.CopyFailed" xml:space="preserve"><value>No fue posible copiar el mensaje de commit al portapapeles.</value></data>
+  <data name="CommitAi.Copied" xml:space="preserve"><value>Mensaje de commit copiado al portapapeles.</value></data>
+  <data name="CommitAi.GeneratedByAi" xml:space="preserve"><value>Generado con IA</value></data>
+  <data name="CommitAi.GeneratedByFallback" xml:space="preserve"><value>Generado con fallback deterministico</value></data>
+  <data name="CommitAi.MixedConcerns" xml:space="preserve"><value>Tus cambios parecen mezclar mas de una preocupacion. Considera separarlos antes de hacer commit.</value></data>
+  <data name="CommitAi.NoChanges" xml:space="preserve"><value>No se encontraron cambios relevantes para generar el commit.</value></data>
+  <data name="CommitAi.Title" xml:space="preserve"><value>Commit con IA</value></data>
+  <data name="DangerousCommand.Confirm" xml:space="preserve"><value>Quieres ejecutar este comando de todos modos?</value></data>
+  <data name="DangerousCommand.Title" xml:space="preserve"><value>Comando peligroso</value></data>
+  <data name="Doctor.Healthy" xml:space="preserve"><value>El repositorio se ve saludable.</value></data>
+  <data name="Doctor.Title" xml:space="preserve"><value>Diagnostico del repositorio</value></data>
+  <data name="Explain.Title" xml:space="preserve"><value>Explicacion del comando</value></data>
+  <data name="Explain.Label.Branch" xml:space="preserve"><value>Branch</value></data>
+  <data name="Explain.Label.Head" xml:space="preserve"><value>HEAD</value></data>
+  <data name="Explain.Label.Index" xml:space="preserve"><value>Index</value></data>
+  <data name="Explain.Label.Notes" xml:space="preserve"><value>Notas</value></data>
+  <data name="Explain.Label.Risk" xml:space="preserve"><value>Riesgo</value></data>
+  <data name="Explain.Label.Summary" xml:space="preserve"><value>Resumen</value></data>
+  <data name="Explain.Label.Undo" xml:space="preserve"><value>Deshacer</value></data>
+  <data name="Explain.Label.WorkingTree" xml:space="preserve"><value>Working tree</value></data>
+  <data name="Explain.Empty.Summary" xml:space="preserve"><value>No fue posible interpretar el comando.</value></data>
+  <data name="Explain.Empty.Unknown" xml:space="preserve"><value>Desconocido.</value></data>
+  <data name="Explain.Empty.Undo" xml:space="preserve"><value>Revisa la sintaxis del comando antes de ejecutarlo.</value></data>
+  <data name="Explain.Reset.Summary.Hard" xml:space="preserve"><value>Mueve HEAD y la branch actual, reinicia el index y descarta cambios del working tree.</value></data>
+  <data name="Explain.Reset.Summary.Default" xml:space="preserve"><value>Mueve HEAD y puede realinear el index segun el modo elegido.</value></data>
+  <data name="Explain.Reset.Head" xml:space="preserve"><value>HEAD se mueve al commit de destino.</value></data>
+  <data name="Explain.Reset.Index.Hard" xml:space="preserve"><value>El index se reinicia para coincidir con el commit de destino.</value></data>
+  <data name="Explain.Reset.Index.Default" xml:space="preserve"><value>El index puede reiniciarse para coincidir con el commit de destino.</value></data>
+  <data name="Explain.Reset.WorkingTree.Hard" xml:space="preserve"><value>Los cambios locales rastreados en el working tree se descartan.</value></data>
+  <data name="Explain.Reset.WorkingTree.Default" xml:space="preserve"><value>El working tree se conserva, salvo que elijas un reset hard.</value></data>
+  <data name="Explain.Reset.Branch" xml:space="preserve"><value>La referencia de la branch actual se reescribe hacia el commit de destino.</value></data>
+  <data name="Explain.Reset.Undo" xml:space="preserve"><value>A menudo puedes recuperar el HEAD anterior con git reflog, pero los cambios no confirmados perdidos con --hard no tienen regreso garantizado.</value></data>
+  <data name="Explain.Reset.Note.Destructive" xml:space="preserve"><value>Un reset hard es destructivo para cambios rastreados.</value></data>
+  <data name="Explain.Reset.Note.Snapshot" xml:space="preserve"><value>Crea un snapshot de seguridad antes de reiniciar si tienes dudas.</value></data>
+  <data name="Explain.Clean.Summary" xml:space="preserve"><value>Elimina archivos y directorios no rastreados del working tree.</value></data>
+  <data name="Explain.Clean.Head" xml:space="preserve"><value>HEAD no se mueve.</value></data>
+  <data name="Explain.Clean.Index" xml:space="preserve"><value>El index no cambia.</value></data>
+  <data name="Explain.Clean.WorkingTree" xml:space="preserve"><value>Los archivos no rastreados pueden borrarse permanentemente segun las flags usadas.</value></data>
+  <data name="Explain.Clean.Branch" xml:space="preserve"><value>No cambian referencias de branch.</value></data>
+  <data name="Explain.Clean.Undo" xml:space="preserve"><value>No hay un undo fiable para git clean salvo que los archivos esten respaldados en otro lugar.</value></data>
+  <data name="Explain.Clean.Note.Preview" xml:space="preserve"><value>Usa git clean -nd primero para ver que se eliminaria.</value></data>
+  <data name="Explain.Clean.Note.Recovery" xml:space="preserve"><value>Los archivos no rastreados quedan fuera del historial de Git, asi que la recuperacion es limitada.</value></data>
+  <data name="Explain.Checkout.Summary.Create" xml:space="preserve"><value>Crea o cambia branches y actualiza el working tree para coincidir con el destino.</value></data>
+  <data name="Explain.Checkout.Summary.Switch" xml:space="preserve"><value>Cambia la branch actual o restaura rutas, segun los argumentos.</value></data>
+  <data name="Explain.Checkout.Head" xml:space="preserve"><value>HEAD puede moverse a otro commit o al tip de otra branch.</value></data>
+  <data name="Explain.Checkout.Index" xml:space="preserve"><value>El index se actualiza para coincidir con el contenido seleccionado.</value></data>
+  <data name="Explain.Checkout.WorkingTree" xml:space="preserve"><value>Los archivos rastreados pueden sobrescribirse si la branch de destino entra en conflicto con cambios locales.</value></data>
+  <data name="Explain.Checkout.Branch.Create" xml:space="preserve"><value>Se puede crear y seleccionar una nueva branch.</value></data>
+  <data name="Explain.Checkout.Branch.Switch" xml:space="preserve"><value>La branch actual puede cambiar.</value></data>
+  <data name="Explain.Checkout.Undo" xml:space="preserve"><value>Si los cambios locales fueron bloqueados o enviados a stash, restauralos desde el stash. Los cambios de branch normalmente se revierten volviendo a la branch anterior.</value></data>
+  <data name="Explain.Checkout.Note.DirtyTree" xml:space="preserve"><value>Cambiar con el working tree sucio puede fallar o producir conflictos.</value></data>
+  <data name="Explain.Checkout.Note.PreferSwitch" xml:space="preserve"><value>Prefiere git switch para branches y git restore para archivos cuando sea posible.</value></data>
+  <data name="Explain.Rebase.Summary" xml:space="preserve"><value>Reaplica commits sobre otra base, reescribiendo sus identidades en el proceso.</value></data>
+  <data name="Explain.Rebase.Head" xml:space="preserve"><value>HEAD se mueve mientras los commits se reescriben sobre la nueva base.</value></data>
+  <data name="Explain.Rebase.Index" xml:space="preserve"><value>El index se actualiza paso a paso durante la reaplicacion.</value></data>
+  <data name="Explain.Rebase.WorkingTree" xml:space="preserve"><value>Los conflictos pueden detener la operacion y dejar estado temporal de rebase en el working tree.</value></data>
+  <data name="Explain.Rebase.Branch" xml:space="preserve"><value>Se reescribe el historial de la branch actual.</value></data>
+  <data name="Explain.Rebase.Undo" xml:space="preserve"><value>Usa git rebase --abort mientras el rebase siga en curso. Despues, git reflog suele poder restaurar la punta anterior de la branch.</value></data>
+  <data name="Explain.Rebase.Note.SharedHistory" xml:space="preserve"><value>Evita rebasear historial publico compartido salvo que tu equipo lo espere.</value></data>
+  <data name="Explain.Rebase.Note.Snapshot" xml:space="preserve"><value>Un snapshot antes del rebase hace la recuperacion mucho mas segura.</value></data>
+  <data name="Explain.Merge.Summary" xml:space="preserve"><value>Combina otra branch con la branch actual y puede crear un merge commit.</value></data>
+  <data name="Explain.Merge.Head" xml:space="preserve"><value>HEAD permanece en la branch actual y avanza al resultado del merge.</value></data>
+  <data name="Explain.Merge.Index" xml:space="preserve"><value>El index registra el resultado del merge, incluidos marcadores de conflicto cuando hace falta.</value></data>
+  <data name="Explain.Merge.WorkingTree" xml:space="preserve"><value>Los conflictos pueden dejar archivos en estado no fusionado hasta resolverlos.</value></data>
+  <data name="Explain.Merge.Branch" xml:space="preserve"><value>La branch actual incorpora el historial fusionado.</value></data>
+  <data name="Explain.Merge.Undo" xml:space="preserve"><value>Usa git merge --abort si el merge sigue en curso. Si el merge commit ya fue creado, git reset o reflog pueden volver atras.</value></data>
+  <data name="Explain.Merge.Note.FastForward" xml:space="preserve"><value>Los merges fast-forward mueven la branch sin crear un merge commit.</value></data>
+  <data name="Explain.Merge.Note.DirtyTree" xml:space="preserve"><value>Los working trees sucios hacen los merges mas riesgosos.</value></data>
+  <data name="Explain.Commit.Summary" xml:space="preserve"><value>Crea un nuevo commit a partir del index actual.</value></data>
+  <data name="Explain.Commit.Head" xml:space="preserve"><value>HEAD avanza a un nuevo commit en la branch actual.</value></data>
+  <data name="Explain.Commit.Index" xml:space="preserve"><value>El contenido staged pasa a formar parte del nuevo commit.</value></data>
+  <data name="Explain.Commit.WorkingTree" xml:space="preserve"><value>Los cambios no staged permanecen en el working tree.</value></data>
+  <data name="Explain.Commit.Branch" xml:space="preserve"><value>La branch actual avanza al nuevo commit.</value></data>
+  <data name="Explain.Commit.Undo" xml:space="preserve"><value>Usa git reset --soft HEAD~1 para deshacer el commit manteniendo los cambios staged.</value></data>
+  <data name="Explain.Commit.Note.StagedOnly" xml:space="preserve"><value>Solo los cambios staged entran al commit, salvo que uses flags como -a.</value></data>
+  <data name="Explain.Add.Summary" xml:space="preserve"><value>Lleva contenido del working tree al index.</value></data>
+  <data name="Explain.Add.Head" xml:space="preserve"><value>HEAD no se mueve.</value></data>
+  <data name="Explain.Add.Index" xml:space="preserve"><value>Los cambios seleccionados se agregan al index.</value></data>
+  <data name="Explain.Add.WorkingTree" xml:space="preserve"><value>El working tree mantiene el mismo contenido de los archivos.</value></data>
+  <data name="Explain.Add.Branch" xml:space="preserve"><value>No cambian referencias de branch.</value></data>
+  <data name="Explain.Add.Undo" xml:space="preserve"><value>Usa git restore --staged &lt;path&gt; para quitar cambios del staged.</value></data>
+  <data name="Explain.Add.Note.Staging" xml:space="preserve"><value>El staging define que ira en el siguiente commit.</value></data>
+  <data name="Explain.Status.Summary" xml:space="preserve"><value>Muestra la relacion entre HEAD, index y working tree.</value></data>
+  <data name="Explain.Status.Head" xml:space="preserve"><value>HEAD no se mueve.</value></data>
+  <data name="Explain.Status.Index" xml:space="preserve"><value>El index no cambia.</value></data>
+  <data name="Explain.Status.WorkingTree" xml:space="preserve"><value>El working tree no cambia.</value></data>
+  <data name="Explain.Status.Branch" xml:space="preserve"><value>No cambian referencias de branch.</value></data>
+  <data name="Explain.Status.Undo" xml:space="preserve"><value>No hace falta deshacer nada porque status es de solo lectura.</value></data>
+  <data name="Explain.Status.Note.Safe" xml:space="preserve"><value>Este es un comando seguro de inspeccion.</value></data>
+  <data name="Explain.Diff.Summary" xml:space="preserve"><value>Muestra diferencias entre dos estados de Git, como HEAD, index y working tree.</value></data>
+  <data name="Explain.Diff.Head" xml:space="preserve"><value>HEAD no se mueve.</value></data>
+  <data name="Explain.Diff.Index" xml:space="preserve"><value>El index no cambia.</value></data>
+  <data name="Explain.Diff.WorkingTree" xml:space="preserve"><value>El working tree no cambia.</value></data>
+  <data name="Explain.Diff.Branch" xml:space="preserve"><value>No cambian referencias de branch.</value></data>
+  <data name="Explain.Diff.Undo" xml:space="preserve"><value>No hace falta deshacer nada porque diff es de solo lectura.</value></data>
+  <data name="Explain.Diff.Note.Cached" xml:space="preserve"><value>Usa --cached para inspeccionar cambios staged.</value></data>
+  <data name="Explain.Generic.Summary" xml:space="preserve"><value>Explica el impacto general de git {0}, pero el comportamiento exacto sigue dependiendo de las flags y los argumentos usados.</value></data>
+  <data name="Explain.Generic.Head" xml:space="preserve"><value>El impacto en HEAD depende de las opciones del subcomando.</value></data>
+  <data name="Explain.Generic.Index" xml:space="preserve"><value>El impacto en el index depende de las opciones del subcomando.</value></data>
+  <data name="Explain.Generic.WorkingTree" xml:space="preserve"><value>El impacto en el working tree depende de las opciones del subcomando.</value></data>
+  <data name="Explain.Generic.Branch" xml:space="preserve"><value>El impacto en la branch depende de las opciones del subcomando.</value></data>
+  <data name="Explain.Generic.Undo" xml:space="preserve"><value>Revisa las flags exactas antes de ejecutar una variante potencialmente destructiva de este comando.</value></data>
+  <data name="Explain.Generic.Note.Preview" xml:space="preserve"><value>Para variantes destructivas, conviene previsualizar primero el impacto.</value></data>
+  <data name="General.Error" xml:space="preserve"><value>Error</value></data>
+  <data name="General.None" xml:space="preserve"><value>Ninguno</value></data>
+  <data name="General.Success" xml:space="preserve"><value>Exito</value></data>
+  <data name="General.Warning" xml:space="preserve"><value>Aviso</value></data>
+  <data name="Language.Detected" xml:space="preserve"><value>Idioma detectado: {0}</value></data>
+  <data name="Model.Missing" xml:space="preserve"><value>El modelo configurado no esta disponible. Instalalo localmente e intentalo de nuevo.</value></data>
+  <data name="PrSummary.Title" xml:space="preserve"><value>Resumen de PR</value></data>
+  <data name="Recover.NoPoints" xml:space="preserve"><value>No se encontraron puntos de recuperacion para este repositorio.</value></data>
+  <data name="Recover.Restored" xml:space="preserve"><value>Punto de recuperacion restaurado.</value></data>
+  <data name="Recover.RestorePrompt" xml:space="preserve"><value>Restaurar este punto de recuperacion?</value></data>
+  <data name="Recover.Title" xml:space="preserve"><value>Recuperacion</value></data>
+  <data name="Snapshot.Created" xml:space="preserve"><value>Snapshot creado: {0}</value></data>
+  <data name="Snapshot.Title" xml:space="preserve"><value>Snapshot</value></data>
+  <data name="Summarize.Title" xml:space="preserve"><value>Resumen del trabajo</value></data>
+  <data name="Why.Title" xml:space="preserve"><value>Por que cambio este archivo?</value></data>
+  <data name="Risk.None" xml:space="preserve"><value>Ninguno</value></data>
+  <data name="Risk.Low" xml:space="preserve"><value>Bajo</value></data>
+  <data name="Risk.Medium" xml:space="preserve"><value>Medio</value></data>
+  <data name="Risk.High" xml:space="preserve"><value>Alto</value></data>
+  <data name="Risk.Critical" xml:space="preserve"><value>Critico</value></data>
+</root>
