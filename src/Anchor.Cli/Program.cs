@@ -48,6 +48,7 @@ var app = new CommandApp(registrar);
 app.Configure(config =>
 {
     config.SetApplicationName("anchor");
+    config.SetApplicationVersion(Anchor.Cli.ApplicationVersionResolver.Resolve());
     config.Settings.ConvertFlagsToRemainingArguments = true;
     config.AddCommand<CommitAiCommand>("commit-ai");
     config.AddCommand<ExplainCommand>("explain");

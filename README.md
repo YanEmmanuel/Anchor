@@ -37,6 +37,14 @@ Implemented focus areas:
 - PR/work summaries and branch/file reasoning helpers
 - transparent Git passthrough with risk preview hooks
 
+## CI/CD
+
+This repository is ready for GitHub Actions on Linux:
+
+- `CI` restores, builds and tests the solution on `ubuntu-latest`
+- `Release` uses Conventional Commits with `release-please` to open the release PR, update `CHANGELOG.md` and `version.txt`, create the GitHub tag/release and publish a self-contained `linux-x64` binary
+- if you want CI to run on release PRs as well, add a `RELEASE_PLEASE_TOKEN` secret with a PAT; otherwise the workflow falls back to `GITHUB_TOKEN`
+
 ## Solution layout
 
 ```text

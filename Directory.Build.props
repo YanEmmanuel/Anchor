@@ -5,5 +5,8 @@
     <LangVersion>latest</LangVersion>
     <AnalysisLevel>latest-recommended</AnalysisLevel>
     <NoWarn>$(NoWarn);CS1591</NoWarn>
+    <VersionFromFile Condition="'$(Version)' == '' and Exists('$(MSBuildThisFileDirectory)version.txt')">$([System.IO.File]::ReadAllText('$(MSBuildThisFileDirectory)version.txt').Trim())</VersionFromFile>
+    <Version Condition="'$(Version)' == '' and '$(VersionFromFile)' != ''">$(VersionFromFile)</Version>
+    <ContinuousIntegrationBuild Condition="'$(GITHUB_ACTIONS)' == 'true'">true</ContinuousIntegrationBuild>
   </PropertyGroup>
 </Project>

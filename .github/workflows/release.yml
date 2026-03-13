@@ -1,0 +1,94 @@
+name: Release
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+concurrency:
+  group: release-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+
+env:
+  CONFIGURATION: Release
+  DOTNET_NOLOGO: true
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    outputs:
+      release_created: ${{ steps.release.outputs.release_created }}
+      tag_name: ${{ steps.release.outputs.tag_name }}
+      version: ${{ steps.release.outputs.version }}
+
+    steps:
+      - name: Create or update release PR
+        id: release
+        uses: googleapis/release-please-action@v4
+        with:
+          token: ${{ secrets.RELEASE_PLEASE_TOKEN != '' && secrets.RELEASE_PLEASE_TOKEN || secrets.GITHUB_TOKEN }}
+          config-file: .github/release-please-config.json
+          manifest-file: .github/.release-please-manifest.json
+          target-branch: ${{ github.ref_name }}
+
+  publish-linux:
+    needs: release
+    if: ${{ needs.release.outputs.release_created == 'true' }}
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout release tag
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: ${{ needs.release.outputs.tag_name }}
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          global-json-file: global.json
+
+      - name: Publish self-contained Linux binary
+        env:
+          VERSION: ${{ needs.release.outputs.version }}
+        run: |
+          dotnet publish src/Anchor.Cli/Anchor.Cli.csproj \
+            -c "$CONFIGURATION" \
+            -r linux-x64 \
+            --self-contained true \
+            -p:PublishSingleFile=true \
+            -p:PublishTrimmed=false \
+            -p:Version="$VERSION" \
+            -o artifacts/publish/linux-x64
+
+      - name: Package release artifact
+        env:
+          VERSION: ${{ needs.release.outputs.version }}
+        run: |
+          install -d dist/package
+          cp artifacts/publish/linux-x64/Anchor.Cli dist/package/anchor
+          chmod +x dist/package/anchor
+          cp README.md dist/package/README.md
+          tar -C dist/package -czf "dist/anchor-linux-x64-v${VERSION}.tar.gz" .
+          sha256sum "dist/anchor-linux-x64-v${VERSION}.tar.gz" > "dist/anchor-linux-x64-v${VERSION}.sha256"
+
+      - name: Upload release assets
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TAG_NAME: ${{ needs.release.outputs.tag_name }}
+          VERSION: ${{ needs.release.outputs.version }}
+        run: |
+          gh release upload "$TAG_NAME" \
+            "dist/anchor-linux-x64-v${VERSION}.tar.gz" \
+            "dist/anchor-linux-x64-v${VERSION}.sha256" \
+            --clobber
